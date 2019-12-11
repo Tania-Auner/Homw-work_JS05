@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dz05(3 persons+different fields+fields check)</title>
+</head>
+<body>
+
+    <script> 
+
+    var a = {
+        name: "Tatiana",
+        surname: "K"
+    }
+
+    var b = {
+        name: "Dima",
+        surname: "S"
+    }
+
+    var c = {
+        name: "Ira",
+        surname: "T"
+    }
+
+    array = [a,b,c]
+    // console.log(array)
+    array[0].age = 27
+    array[1].fathername = "Ivanovich"
+    array[2].sex = "women";
+    console.log(array)
+
+    for (item in array) {
+        console.log(typeof array[item].age) 
+
+        if(typeof array[item].age == 'number'){
+             alert("Найдено 'age' ")
+        }
+        if(typeof array[item].fathername == 'string'){
+             alert("Найдено 'fathername' ")
+        }
+        if(typeof array[item].sex == 'string'){
+             alert("Найдено 'sex' ")
+        }
+
+    }
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ05(fullName)</title>
+</head>
+<body>
+
+    <script>
+            var myArray =[];
+
+var a = {
+    name: "Tatiana",
+    surname: "K"
+}
+
+var b = {
+    name: "Dima",
+    surname: "S"
+}
+
+var c = {
+    name: "Ira",
+    surname: "T"
+}
+
+myArray.push(a,b,c)
+
+
+for(items4 in myArray){
+    if(typeof myArray[items4].name == 'string' && typeof myArray[items4].surname == 'string'){
+         myArray[items4].fullName = myArray[items4].name + ' ' + myArray[items4].surname
+    }
+
+}
+
+console.log(myArray)
+
+
+    
+    </script>
+    
+</body>
+</html>

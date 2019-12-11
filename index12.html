@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ05(deserialize)</title>
+</head>
+<body>
+
+        <script>
+    
+                var myArray =[];
+            
+                var a = {
+                    name: "Tatiana",
+                    surname: "K"
+                }
+            
+                var b = {
+                    name: "Dima",
+                    surname: "S"
+                }
+            
+                var c = {
+                    name: "Ira",
+                    surname: "T"
+                }
+            
+                myArray.push(a,b,c)
+                // console.log(myArray)
+            
+               
+                
+                var jsonString = JSON.stringify(myArray)
+                    console.log(jsonString)
+                
+             
+                
+                var nextArray =[];
+                 
+            
+                nextArray.push(JSON.stringify(myArray[0]))
+                console.log(nextArray)
+                
+                
+                
+                
+                
+                </script>
+    
+</body>
+</html>
